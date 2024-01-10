@@ -88,6 +88,14 @@ body {
     height: 600px;
     display: flex;
 }
+.jumbotron-tall2 h1 {
+    font-size: 56px; /* Adjust the font size for the h1 */
+
+}
+.jumbotron-tall2  p{
+    font-size: 28px; /* Adjust the font size for the h1 */
+
+}
 .jumbotron-tall3 {
     height: 600px;
     width: 100%;
@@ -95,6 +103,10 @@ body {
     margin-top: 65px;
     display: flex;
     position: relative;
+}
+.jumbotron-tall3 h1{
+    font-size: 56px; /* Adjust the font size for the h1 */
+
 }
 
 
@@ -172,9 +184,12 @@ h1{
 a {
     text-decoration: none;
     /* Additional styling if needed */
-    color: #000; /* Set the desired text color */
+    color: #29406a; /* Set the desired text color */
     font-weight: bold; /* Set the desired font weight */
     /* Add any other styles as needed */
+}
+p{
+    color:#29406a;
 }
  
 .floater-container {
@@ -186,6 +201,8 @@ a {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
 }
 
 
@@ -209,6 +226,8 @@ a {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
 }
 .floater-container3 {
     position: absolute;
@@ -217,8 +236,10 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: #01ffff;
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
 }
 
 .jumbotron-img-tall {

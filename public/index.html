@@ -4,6 +4,7 @@
   <link rel="stylesheet" type="text/css" href="/homepage.css">
   <link rel="stylesheet" type="text/css" href="/expandableNavbar.css">
   <link rel="stylesheet" type="text/css" href="/services.css">
+  <link rel="stylesheet" type="text/css" href="/footer.css">
 
 </head>
 
@@ -25,7 +26,7 @@
       <div class="jumbotron-short-nav">
             <div class="navbar">
               
-                <button class="expand-btn" onmouseenter="showMenu()" onmouseleave="hideMenu()">Test</button>
+                <button class="expand-btn" onmouseenter="showMenu()" onmouseleave="hideMenu()">Services</button>
                   <div class="navbar-content" id="servicesMenu" onmouseenter="showMenu()" onmouseleave="hideMenu()">
                     <a href="depInt.html" target="_blank">Deployment & Integration</a>
                     <a href="instUp.html">Installations & Upgrades</a>
@@ -34,9 +35,18 @@
                   </div>
                   <a href="about.html" class="nav-btn">About</a>
                   <a href="contact.html" class="nav-btn">Contact</a>
-                  <button class="quote-btn">Request a Quote</button>
+                  <!-- Add an ID to your button for easier selection -->
+                  <button id="quoteButton" class="quote-btn">Request a Quote</button>
+
+                  <script>
+                  document.getElementById("quoteButton").addEventListener("click", function() {
+                      // Navigate to quote.html
+                      window.location.href = "quote.html";
+                  });
+                  </script>
+
                   <a href="index.html">
-                    <img src="/public/images/AcelLogo.png" alt="Acel Logo" height="150px" width="300px">
+                    <img src="/images/AcelLogo.png" alt="Acel Logo" height="150px" width="300px">
                     
                   </a>
                   
@@ -50,7 +60,9 @@
         <div class="action-animation">
             <h1>Retail solutions that deliver more for your business</h1>
             <p>We're the leaders in retail service and digital signage solutions so you can be the leader in your marketplace.</p>
-            <button class="quote-btn">Solve all my problems</button>
+            <button class="quote-btn">
+              <a href="contact.html" target="_blank">Solve all my problems</a>
+            </button>
         </div>
         <img src="/images/GettyImages-149260848-scaled-e1623358858697.jpg" class="jumbotron-img-tall">
     </div>
@@ -86,8 +98,8 @@
         <h1>Expertly managed technology deployments</h1>
         <p>Need to do a large-scale technology rollout? Acel IT Solutions<br> is experienced in managing and executing all <br>sizes of system deployments. We can work directly with the<br> end-user or partner with another systems integrator to make<br> technology rollouts fast, efficient, and successful.</p>
     </div>
-    <img src="/public/images/Grid.jpg" class="side-by-side-image">
-    <img src="/public/images/GettyImages-149260848-scaled-e1623358858697.jpg" class="side-by-side-image">
+    <img src="/images/Grid.jpg" class="side-by-side-image">
+    <img src="/images/GettyImages-149260848-scaled-e1623358858697.jpg" class="side-by-side-image">
 </div>
 
 <div class="jumbotron-tall3">
@@ -96,7 +108,7 @@
       <p>As a hardware agnostic service company, we don't force a particular system on your store. Whether you've picked out your own hardware or need help finding the right solution, we can integrate, install, service, and maintain the right equipment for your business' unique application.</p>
       <button class="quote-btn">Get Started</button>
   </div>
-  <img src="/public/images/GettyImages-1010852036-scaled.jpg" class="jumbotron-img-tall">
+  <img src="/images/GettyImages-1010852036-scaled.jpg" class="jumbotron-img-tall">
 </div>
 <div class="jumbotron-tall2">
   <div class="floater-container">
@@ -108,9 +120,35 @@
   <img src="/images/Grid.jpg" class="side-by-side-image">
 </div>
 
+<!--Footer-->
+<footer>
+  <div class="footer-container">
+<div class="branding">
+    <div class="logo">
+      <img src="/images/AcelLogo.png" alt="Acel Logo" height="300px" width="600px">
+    </div>
+<div class="calltoaction">
+      <a href="quote.html">Request a quote</a>
+      <a href="about.html">About</a>
+</div>
+<div class="address">
+        <p>612-240-1069
+          <br>123 main street 
+          <br> Saint Louis, MO 63116</p>
+</div>
+
+</div>
+  </div>
+  <div class="copyright">
+    <p>&copy; Acel IT Solutions | 2019–2023 Ohm Lotus Phoenix, llc. Web Design</p>
+  
+  </div>
+</div>
+</footer>
 
 
 
-  <script src="/public/expandableNavbar.js"></script>
+
+  <script src="/expandableNavbar.js"></script>
 </body>
 </html>

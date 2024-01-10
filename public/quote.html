@@ -4,6 +4,10 @@
   <link rel="stylesheet" type="text/css" href="homepage.css">
   <link rel="stylesheet" type="text/css" href="expandableNavbar.css">
   <link rel="stylesheet" type="text/css" href="services.css">
+  <link rel="stylesheet" type="text/css" href="/footer.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+
+
 
 </head>
 
@@ -35,12 +39,41 @@
                       <a href="about.html" class="nav-btn">About</a>
                       <a href="contact.html" class="nav-btn">Contact</a>
                       <a href="index.html">
-                        <img src="F:\HOMEPC\Documents\My Web Sites\NodeProjects\Acel\images\AcelLogo.png" alt="Acel Logo" height="150px" width="300px">
+                        <img src="/images/AcelLogo.png" alt="Acel Logo" height="150px" width="300px">
                       </a>    
                 </div>
           </div>
 <!--containers -->
-<div>quote</div>
+<div class="jumbotron-contact">
+  <div class="floater-container">
+  <div class="contact-container">
+      <form action="/submit-form" method="POST" class="contact-form">
+          <!-- Replace "/submit-form" with the actual endpoint where you handle form submissions -->
+          <!-- Name -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br>
+          <!-- Email -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+           <!-- Company -->
+           <label for="name">Company:</label>
+           <input type="text" id="company" name="company" required><br>
+          <!-- Phone Number -->
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone"><br>
+          <!-- Message -->
+          <label for="message">Message:</label>
+<textarea id="message" name="message" cols="50" rows="8" required></textarea><br>
+
+          <!-- Add more fields as needed -->
+          <!-- Submit Button -->
+          <button class="quote-btn" type="submit">Submit</button>
+          
+      </form>
+  </div>
+</div>
+
+
 
 
 

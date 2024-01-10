@@ -1,54 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="homepage.css">
-  <link rel="stylesheet" type="text/css" href="expandableNavbar.css">
-  <link rel="stylesheet" type="text/css" href="services.css">
+  <link rel="stylesheet" type="text/css" href="/homepage.css">
+  <link rel="stylesheet" type="text/css" href="/expandableNavbar.css">
+  <link rel="stylesheet" type="text/css" href="/services.css">
+  <link rel="stylesheet" type="text/css" href="/footer.css">
 
 </head>
 
 <body>
-    <div class="topbar">
-        <!-- Other topbar content -->
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search...">
-            <button class="search-button">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-            </button>
-        </div>
+  <div class="topbar">
+    <!-- Other topbar content -->
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
     </div>
-    
-          <div class="jumbotron-short-nav">
-                <div class="navbar">
+</div>
+
+      <div class="jumbotron-short-nav">
+            <div class="navbar">
+              
+                <button class="expand-btn" onmouseenter="showMenu()" onmouseleave="hideMenu()">Services</button>
+                  <div class="navbar-content" id="servicesMenu" onmouseenter="showMenu()" onmouseleave="hideMenu()">
+                    <a href="depInt.html" target="_blank">Deployment & Integration</a>
+                    <a href="instUp.html">Installations & Upgrades</a>
+                    <a href="mainRep.html">Maintenance & Repair</a>
+                    <a href="sysCon.html">System Consulting</a>
+                  </div>
+                  <a href="about.html" class="nav-btn">About</a>
+                  <a href="contact.html" class="nav-btn">Contact</a>
+                  <!-- Add an ID to your button for easier selection -->
+                  <button id="quoteButton" class="quote-btn">Request a Quote</button>
+
+                  <script>
+                  document.getElementById("quoteButton").addEventListener("click", function() {
+                      // Navigate to quote.html
+                      window.location.href = "quote.html";
+                  });
+                  </script>
+
+                  <a href="index.html">
+                    <img src="/images/AcelLogo.png" alt="Acel Logo" height="150px" width="300px">
+                    
+                  </a>
                   
-                    <button class="expand-btn" onmouseenter="showMenu()" onmouseleave="hideMenu()">Services</button>
-                      <div class="navbar-content" id="servicesMenu" onmouseenter="showMenu()" onmouseleave="hideMenu()">
-                        <a href="depInt.html" target="_blank">Deployment & Integration</a>
-                        <a href="instUp.html">Installations & Upgrades</a>
-                        <a href="mainRep.html">Maintenance & Repair</a>
-                        <a href="sysCon.html">System Consulting</a>
-                      </div>
-                      <a href="contact.html" class="nav-btn">Contact</a>
-                      <button class="quote-btn" onclick="window.location.href='quote.html';">Request a Quote</button>
-                      <a href="index.html">
-                        <img src="F:\HOMEPC\Documents\My Web Sites\NodeProjects\Acel\images\AcelLogo.png" alt="Acel Logo" height="150px" width="300px">
-                      </a>    
-                </div>
-          </div>
-<!--containers -->
-<div>update content here </div>
+            </div>
+      </div>
 
 
 
   
-      
-    
+      <div class="jumbotron-tall">
+        <div class="action-animation">
+            <h1>How it all started...</h1>
+
+        </div>
+        <img src="/images/GettyImages-149260848-scaled-e1623358858697.jpg" class="jumbotron-img-tall">
+    </div>
     
 
-  <script src="expandableNavbar.js"></script>
+  <div class="jumbotron-med">
+    <h1>Unmatched service from a comprehensive technology partner</h1>
+    <p>For more than 30 years, Retail Store Technology has provided complete system and digital signage solutions for <br>businesses across the US, specializing in installation, integrations, maintenance, and beyond. If your hardware <br>and software security or compliance systems aren't working together, you're limiting your success. We're here <br>to fix that through systems integration. RST has a 4-hour response and 24-hour resolution guarantee to make <br>sure you get solutions and support fast with little to no downtime.</p>
+  </div>
+
+  <div class="jumbotron-tall2">
+    <div class="floater-container3">
+        <h1>The begining</h1>
+        <p>Acel IT Solutions (formally pcCashdrawer) was founded in 1985 with the purpose of providing best-in-class system and digital signage solutions for all types of retail environments. We started as the company that arrived on-site with RVs fully loaded with the right equipment for the job. Today, we continue to deliver exceptional white-glove service to the biggest retailers around the country.</p>
+    </div>
+    <img src="/images/Grid.jpg" class="side-by-side-image">
+    <img src="/images/GettyImages-149260848-scaled-e1623358858697.jpg" class="side-by-side-image">
+</div>
+
+<div class="jumbotron-tall3">
+  <div class="floater-container2">
+      <h1>Who we work with</h1>
+      <p>We partner with clients in retail, grocery, and QSR nationwide to provide comprehensive technology solutions. Whether you need a full system installation or new software that can integrate with your existing system, we get the job done.</p>
+      
+  </div>
+  <img src="/images/GettyImages-1010852036-scaled.jpg" class="jumbotron-img-tall">
+</div>
+<div class="jumbotron-tall2">
+  <div class="floater-container">
+      <h1>Enhancing your business</h1>
+      <p>We help businesses become leaders in their marketplace through expert-level solutions at all phases of the IT infrastructure process. Whether you need rewiring and register staging for a store remodel or hardware burn-in and recertification, our dedicated team of FTE/W2 employees is experienced in ensuring your system works for you.</p>
+  </div>
+  <img src="/images/RST-DigitalSignSolution.jpg" class="side-by-side-image">
+  <img src="/images/Grid.jpg" class="side-by-side-image">
+</div>
+
+<!--Footer-->
+<footer>
+  <div class="footer-container">
+<div class="branding">
+    <div class="logo">
+      <img src="/images/AcelLogo.png" alt="Acel Logo" height="300px" width="600px">
+    </div>
+<div class="calltoaction">
+      <a href="quote.html">Request a quote</a>
+      <a href="about.html">About</a>
+</div>
+<div class="address">
+        <p>1-800-867-5309
+          <br>123 main street 
+          <br> Saint Louis, MO 63116</p>
+</div>
+
+</div>
+  </div>
+  <div class="copyright">
+    <p>&copy; Acel IT Solutions | 2019–2023 Ohm Lotus Phoenix, llc. Web Design</p>
+  
+  </div>
+</div>
+</footer>
+
+
+
+
+  <script src="/expandableNavbar.js"></script>
 </body>
 </html>

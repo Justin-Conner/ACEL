@@ -1,12 +1,12 @@
 .contact-container {
     font-size: 18px;
-    background-color: white;
     display: flex;
     flex-direction: column; /* Change to column */
     align-items: center;
-    
+    background-color: transparent;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     border-radius: 10px;
+    z-index: 100;
     
 
 }
@@ -31,7 +31,10 @@
     height: 100%; /* Set height to 100% to fill the container */
     box-sizing: border-box; /* Include padding in the total height */
     width: 600px;
-    background-color: white;
+        background-color: #eef1f4;
+        border-radius: 10px;
+        margin-top: 60px;
+    ;
 }
 
 .jumbotron-contact {
@@ -45,6 +48,8 @@
     top: 0;
     width: 100%;
     margin-top: 250px;
+    background-color: white;
+
 }
 
 .jumbotron-img-contact {

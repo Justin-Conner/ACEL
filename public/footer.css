@@ -1,0 +1,56 @@
+.footer-container{
+margin-top: auto;
+    z-index: 100;
+
+}
+.branding {
+    background-color: #29406a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.branding > * {
+    flex: 1; /* Distribute available space equally among child elements */
+    margin: 0 10px; /* Adjust if needed for space between child elements */
+    text-align: center; /* Center text if needed */
+}
+
+
+.logo {
+    padding-left: 40px;
+    background-color: transparent;
+}
+
+.calltoaction {
+    padding-right: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column; /* Adjust if needed */
+    justify-content: space-between; 
+    color: white;
+    text-align: left; 
+}
+.calltoaction a {
+    padding-left: 340px;
+    color: white;
+}
+
+.address {
+    background-color: transparent;
+}
+.address p{
+    background-color: transparent;
+    color: white;
+}
+.copyright {
+    background-color: #d8c771;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px; /* Add padding for space between items */
+}
+
