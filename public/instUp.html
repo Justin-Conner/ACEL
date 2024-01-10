@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="homepage.css">
+  <link rel="stylesheet" type="text/css" href="expandableNavbar.css">
+  <link rel="stylesheet" type="text/css" href="services.css">
+
+</head>
+
+<body>
+  <div class="topbar">
+    <!-- Other topbar content -->
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+    </div>
+</div>
+
+      <div class="jumbotron-short-nav">
+            <div class="navbar">
+              
+                <button class="expand-btn" onmouseenter="showMenu()" onmouseleave="hideMenu()">Services</button>
+                  <div class="navbar-content" id="servicesMenu" onmouseenter="showMenu()" onmouseleave="hideMenu()">
+                    <a href="depInt.html" target="_blank">Deployment & Integration</a>
+                    <a href="instUp.html">Installations & Upgrades</a>
+                    <a href="mainRep.html">Maintenance & Repair</a>
+                    <a href="sysCon.html">System Consulting</a>
+                  </div>
+                  <a href="about.html" class="nav-btn">About</a>
+                  <a href="contact.html" class="nav-btn">Contact</a>
+                  <button class="quote-btn" onclick="window.location.href='quote.html';">Request a Quote</button>
+                  <a href="index.html">
+                    <img src="F:\HOMEPC\Documents\My Web Sites\NodeProjects\Acel\images\AcelLogo.png" alt="Acel Logo" height="150px" width="300px">
+                  </a>
+            </div>
+      </div>
+<!--containers -->
+<div>update content here </div>
+<h1>Installations Upgrades</h1>
+<script src="expandableNavbar.js"></script>
+
+</body>
+</html>

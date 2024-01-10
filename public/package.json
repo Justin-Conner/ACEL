@@ -1,0 +1,15 @@
+{
+  "name": "acel",
+  "version": "1.0.0",
+  "description": "Logo color 1 = #d8c771\r Logo color 2 = #29406a",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
